@@ -77,7 +77,7 @@ int RNM(char Ex[])          //中缀表达式转换成后缀
             return -1;
         }
 
-		scanf ("%c ",&c);
+		scanf ("%c",&c);
     }
     while(top - base)
     {
@@ -155,7 +155,11 @@ int RPN(char Ex[])         //后缀表达式的计算
 		c = Ex[j++];
 	}
 	d = s[--top];
-	printf("%lf",d);
+	if((int)d== d)
+		printf("\n %d",(int)d);
+	else
+		printf("\n %lf",d);
+
 	return 0;
 }
 

@@ -124,7 +124,6 @@ int RNM(char Ex[])          //中缀表达式转换成后缀
 			scanf("%c",&c.C);
 			if(c.C<'0'||c.C>'9')
 				Ex[i++] = ' ';
-			
         }
 
 		while(c.C == ' ')
@@ -179,7 +178,7 @@ int RNM(char Ex[])          //中缀表达式转换成后缀
             return -1;
         }
 
-		scanf ("%c ",&c.C);
+		scanf ("%c",&c.C);
     }
     while(StackLen(s))
     {
@@ -261,7 +260,10 @@ int RPN(char Ex[])         //后缀表达式的计算
 		c = Ex[j++];
 	}
 	pop(&s,&d);
-	printf("%lf",d.D);
+	if((int)d.D == d.D)
+		printf("\n %d",(int)d.D);
+	else
+		printf("\n %lf",d.D);
 	return 0;
 }
 
