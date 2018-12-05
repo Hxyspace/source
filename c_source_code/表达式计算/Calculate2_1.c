@@ -106,19 +106,16 @@ int pop(sqStack *s,data *e)
 	return 0;
 }
 
-double sum(char a,double x,double y)
+double sum(char a,double x,double y)     //两个数的计算
 {
 	switch( a )
 		{
 			case '+':
 				return x+y;
-				break;
 			case '-':
 				return x-y;
-				break;
 			case '*':
 				return x*y;
-				break;
 			case '/':
 				if(y != 0)
 				{
@@ -129,13 +126,12 @@ double sum(char a,double x,double y)
 					printf("\n出错：除数为零！\n");
 					return -1;
 				}
-				break;
 		}
 }
 
 int Priority()
 {
-	sqStack s1,s2;
+	sqStack s1,s2;       //运算符存入s1   数字存入s2
 	data c1,e1;
 
 	data d2,e2,sum2;
