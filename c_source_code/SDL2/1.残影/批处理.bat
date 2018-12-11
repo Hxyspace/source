@@ -1,7 +1,11 @@
 @echo off
-if "%1" == "h" goto begin 
-　　    mshta vbscript:createobject("wscript.shell").run("%~nx0 h",0)(window.close)&&exit 
-　　:begin
-@echo off
-make
+if exist "error.txt" del error.txt
+
+make  >>error.txt 2>&1
 make clean
+
+for %%a in ("error.txt") do (
+	if "%%~za" equ "0" (
+	del error.txt)
+	)
+exit
