@@ -3,7 +3,7 @@ CC = gcc
 CC2 = windres
 
 #依赖参数
-CFLAGS = -g -Wall -lmingw32 -lSDL2main -lSDL2
+CFLAGS = -g -Wall -mwindows -lmingw32 -lSDL2main -lSDL2
 
 #依赖的头文件,如果需要头文件  要加参数  -I.
 DEPS = 
