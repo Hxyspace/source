@@ -9,8 +9,8 @@ fso.CopyFolder"D:\杂七杂八的文件\Git库\make",".\\",False
 set oFolder = fso.GetFolder(".")
 
 For each file in oFolder.Files
-	sExt = LCase(Right(file.Name,2))
-	If sExt = ".c" Then name = name & fso.GetBaseName(file)&".o "
+	sExt = LCase(fso.GetExtensionName(file))
+	If sExt = "c" Then name = name & fso.GetBaseName(file)&".o "
 Next
 
 '修改gcc参数 和o文件
