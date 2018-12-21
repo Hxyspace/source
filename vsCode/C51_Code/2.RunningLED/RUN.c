@@ -1,30 +1,22 @@
-#include "reg51.h"
-#include "intrins.h"
-typedef unsigned char u8;
-typedef unsigned int u16;
-#define led P2
-   void delay (u16 i)
+/*走马灯程序*/
+#include<reg52.h>
 
-   {
-   while(i--);
-   }
- void main()
+void delay()    //延时
 {
-u8 i=0;
-led=0xfe;
-delay(50000);
-       while(1)
-	   {
-	   for(i=0;i<7;i++)
-	   {
-	   led=_crol_(led,1);
-	      delay (50000);
-		  }
-		  for(i=0;i<7;i++)
-	   {
-	   led=_crol_(led,1);
-	      delay (50000);
-	   }
-	
-	   }
+    unsigned char i = -1,j = -1;
+    while(i--)
+    while(j--);
+}
+
+void main()
+{
+    unsigned char b = 1;
+    while(1)
+    {
+        P2 = ~b;       //取反，0的位数表示灯亮
+        b <<= 1;
+        if(b == 0)
+        b = 1;
+        delay();
+    }
 }
