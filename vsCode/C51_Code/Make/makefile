@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\2.RunningLED
-File = RUN
+Path = ..\5.Dynamic_Number
+File = number
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
@@ -13,12 +13,12 @@ OHX = $(File)
 HEX = $(File).hex
 
 $(HEX):$(OHX)
-	@$(OH) $^
+	$(OH) $^
 	@move $(HEX) $(Path)
 $(OHX):$(OBJ)
-	@$(BL) $^ TO $@
+	$(BL) $^ TO $@
 $(OBJ):$(CODE)
-	@$(CC) $^
+	$(CC) $^
 #清除
 clean:
 	@del $(OBJ) $(OHX) $(File).M51 $(Path)\\$(File).LST
