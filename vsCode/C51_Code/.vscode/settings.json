@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "reg52.h": "c"
-    }
+        "reg52.h": "c",
+        "reg51.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }

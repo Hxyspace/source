@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "D:\\杂七杂八的app\\C51 Compile\\INC\\**",
-                "D:\\杂七杂八的app\\C51 Compile\\**"
+                "D:\\杂七杂八的app\\C51 Compile\\**",
+                "D:/杂七杂八的app/C51 Compile/INC"
             ],
             "defines": [
                 "_DEBUG",
