@@ -7,7 +7,9 @@
                 "D:\\杂七杂八的app\\npMingw64v82\\mingw\\x86_64-w64-mingw32\\include",
                 "D:\\杂七杂八的app\\npMingw64v82\\mingw\\include",
                 "D:\\杂七杂八的app\\npMingw64v82\\mingw\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include",
-                "D:\\杂七杂八的app\\npMingw64v82\\mingw\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++"
+                "D:\\杂七杂八的app\\npMingw64v82\\mingw\\lib\\gcc\\x86_64-w64-mingw32\\8.1.0\\include\\c++",
+                "D:/杂七杂八的app/npMingw64v82/mingw/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+                "D:/杂七杂八的app/npMingw64v82/mingw/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1"
             ],
             "defines": [
                 "_DEBUG",
