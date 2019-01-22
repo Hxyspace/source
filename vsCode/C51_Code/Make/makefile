@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\5.Dynamic_Number
-File = number
+Path = ..\8.clock
+File = clock
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
