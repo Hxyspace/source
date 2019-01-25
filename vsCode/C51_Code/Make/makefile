@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\8.clock
-File = clock
+Path = ..\10.Serial_communication
+File = serial_communication
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
