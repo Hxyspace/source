@@ -10,15 +10,15 @@ sbit SER=P3^4;
 void Hc595SendByte(uchar dat)    //595三态八位I/O口扩展芯片  设置数据
 {
 	uchar a;
-	SRCLK=0;
-	rCLK=0;
+	SRCLK=0;      //输入控制开关
+	rCLK=0;       //输出控制开关
 	for(a=0;a<8;a++)
 	{
-		SER=dat>>7;
+		SER=dat>>7;     //数据输入端口
 		dat<<=1;
 
 		SRCLK=1;
-		_nop_();
+		_nop_();     //延时，等待数据输入完成
 		_nop_();
 		SRCLK=0;
 	}
