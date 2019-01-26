@@ -9,7 +9,7 @@ void insert(int k[],int N)
         if(k[i] < k[i-1])
         {
             temp = k[i];
-            for(j = i-1;k[j] > temp && j >= 0;j--)
+            for(j = i-1;k[j] > temp;j--)
             {
                 k[j+1] = k[j];
             }
