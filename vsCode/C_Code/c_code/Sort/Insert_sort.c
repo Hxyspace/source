@@ -22,7 +22,7 @@ int main()
 {
     int k[10] = {2,3,7,9,4,1,5,0,6,8};
     insert(k,10);
-    for(int i;i < 10;i++)
+    for(int i = 0;i < 10;i++)
     printf("%2d",k[i]);
     putchar('\n');
 
