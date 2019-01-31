@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\10.Serial_communication
-File = serial_communication
+Path = ..\11.Matrix_keyboard
+File = keyboard
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
