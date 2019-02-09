@@ -3,7 +3,7 @@
 int main()
 {   
     
-    printf("hello world!ÄãºÃ\n");
+    printf("hello world!ä½ å¥½\n");
     getchar();
     return 0;
 }

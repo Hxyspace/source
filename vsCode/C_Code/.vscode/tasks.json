@@ -14,8 +14,41 @@
                 "-lm",
                 "-std=c++17",
                 "-Wno-format",
-                //"-fexec-charset=GBK",   //输出的字符编码 保证正常输出中文
-                //"-finput-charset=UTF-8"   //输入的文本编码  默认UTF-8
+                "-fexec-charset=GBK",   //输出的字符编码 保证正常输出中文
+                "-finput-charset=UTF-8"   //输入的文本编码  默认UTF-8
+            ],
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "absolute"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "yuan Compile",
+            "command": "tcc",
+            "args": [
+                "-run",
+                "${file}"
             ],
             "type": "shell",
             "group": {
