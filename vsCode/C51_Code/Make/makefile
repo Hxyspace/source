@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\11.Matrix_keyboard
-File = keyboard
+Path = ..\12.LCD
+File = Lcdtest
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
