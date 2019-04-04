@@ -127,6 +127,7 @@ double sum(char a,double x,double y)     //两个数的计算
 					return -1;
 				}
 		}
+	return -1;
 }
 
 int Priority()
