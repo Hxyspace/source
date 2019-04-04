@@ -6,10 +6,31 @@ public class Testobject
     {
         Testobject to = new Testobject();
         System.out.println(to.toString());
+
+        person yuan = new person("xin",20);
+        System.out.println(yuan.toString());
     }
+
+    
+    public String toString()
+    {
+        return "æµ‹è¯•objectæ–¹æ³•";
+    }
+}
+
+class person
+{
+    String name;
+    int age;
 
     public String toString()
     {
-        return "²âÊÔobject·½·¨";
+        return name + "å¹´é¾„:" + age;
+    }
+
+    public person(String name, int age)
+    {
+        this.name = name;
+        this.age = age;
     }
 }
