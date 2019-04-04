@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\12.LCD
-File = Lcdtest
+Path = ..\13.EEPROM
+File = EEPROM
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
