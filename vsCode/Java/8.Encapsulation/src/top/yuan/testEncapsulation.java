@@ -11,13 +11,3 @@ public class testEncapsulation
     }
 }
 
-class Human
-{
-    private int age;
-    String name;
-
-    void sayAge()
-    {
-        System.out.println(age);
-    }
-}

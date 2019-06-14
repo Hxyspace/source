@@ -4,8 +4,8 @@ BL = BL51
 OH = OH51
 
 #路径and文件
-Path = ..\13.EEPROM
-File = EEPROM
+Path = ..\14.Step_motor
+File = Step_motor
 
 CODE = $(Path)\$(File).c
 OBJ = $(Path)\$(File).OBJ
