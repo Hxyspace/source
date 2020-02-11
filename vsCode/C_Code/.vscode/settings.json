@@ -3,7 +3,10 @@
         "iostream": "cpp",
         "ostream": "cpp",
         "ios": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "*.tcc": "c",
+        "cstdlib": "c",
+        "memory": "c"
     }
     
 }

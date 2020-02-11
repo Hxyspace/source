@@ -12,7 +12,7 @@ typedef struct
     int stackSize;
 }sqStack;
 
-InitStack(sqStack *s)
+InitStack(sqStack *s)		//初始化栈
 {
     s->base = (ElemType *)malloc(STACK_INIT_SIZE * sizeof (ElemType));
     if (!s->base)
@@ -21,7 +21,7 @@ InitStack(sqStack *s)
     s->stackSize = STACK_INIT_SIZE;
 }
 
-push(sqStack *s,ElemType e)
+push(sqStack *s,ElemType e)		//入栈
 {
     //如果栈空，追加空间
     if (s->top - s->base >= s->stackSize )
@@ -36,12 +36,12 @@ push(sqStack *s,ElemType e)
     s->top++;
 }
 
-ClearStack(sqStack *s)
+ClearStack(sqStack *s)	//清空栈
 {
     s->top = s->base;
 }
 
-DestroyStack(sqStack *s)
+DestroyStack(sqStack *s)		//销毁栈
 {
     int i,len;
     len = s->stackSize;
@@ -54,12 +54,12 @@ DestroyStack(sqStack *s)
     s->stackSize = 0;
 }
 
-int StackLen(sqStack s)
+int StackLen(sqStack s)		//返回栈长度
 {
     return(s.top - s.base );
 }
 
-pop(sqStack *s,ElemType *e)
+pop(sqStack *s,ElemType *e)		//出栈
 {
     if(s->top == s->base )
         return 0;
