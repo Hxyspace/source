@@ -1,7 +1,13 @@
 {
     "files.associations": {
         "reg52.h": "c",
-        "reg51.h": "c"
+        "reg51.h": "c",
+        "REG52.H": "c",
+        "REG51.H": "c"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+"code-runner.executorMap": {
+//        "c": "cd ../Make && make && make clean",
+        "c": "c51 $fileName && BL51 $fileNameWithoutExt.OBJ TO $fileNameWithoutExt && OH51 $fileNameWithoutExt && rm $fileNameWithoutExt.OBJ,$fileNameWithoutExt.LST,$fileNameWithoutExt.M51,$fileNameWithoutExt"
+    }
 }

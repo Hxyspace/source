@@ -11,7 +11,12 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "sbit=char",
+                "sfr=char",
+                "bit=char",
+                "FOSC_160000",
+                "code=const"
             ],
             "compilerPath": "D:\\Program Files\\C51 Compile\\BIN\\C51.exe",
             "cStandard": "c99",
