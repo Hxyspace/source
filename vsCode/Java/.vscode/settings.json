@@ -1,0 +1,12 @@
+{
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac encoding UTF-8 $fileName && java $fileNameWithoutExt"
+    },
+    "java.dependency.packagePresentation": "flat",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    }
+}
