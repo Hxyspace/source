@@ -6,7 +6,8 @@
         "string": "cpp",
         "*.tcc": "c",
         "cstdlib": "c",
-        "memory": "c"
+        "memory": "c",
+        "sdl.h": "c"
     }
     
 }

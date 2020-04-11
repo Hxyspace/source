@@ -1,3 +1,9 @@
+/*
+ * @Author: xinyuan 
+ * @Date: 2020-02-17 23:55:24 
+ * @Last Modified by: xinyuan
+ * @Last Modified time: 2020-02-18 00:12:50
+ */
 #include <stdio.h>
 #include <string.h>
 #include <malloc.h>
@@ -8,7 +14,6 @@ int main()
     char *x = addBinary("1111", "1111");
     return 0;
 }
-
 
 char * addBinary(char * a, char * b){
     char *bin, *temp;       /* bin为相加后的字符串，temp为长的那个字符串 */

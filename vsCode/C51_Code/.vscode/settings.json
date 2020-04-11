@@ -6,8 +6,14 @@
         "REG51.H": "c"
     },
     "C_Cpp.errorSquiggles": "Enabled",
-"code-runner.executorMap": {
+"code-runner.executorMap": {    //编译c51单片机程序c语言
 //        "c": "cd ../Make && make && make clean",
         "c": "c51 $fileName && BL51 $fileNameWithoutExt.OBJ TO $fileNameWithoutExt && OH51 $fileNameWithoutExt && rm $fileNameWithoutExt.OBJ,$fileNameWithoutExt.LST,$fileNameWithoutExt.M51,$fileNameWithoutExt"
+    },
+    "code-runner.executorMapByFileExtension": {     //编译c51单片机程序汇编语言
+        ".asm": "a51 $fileName && BL51 $fileNameWithoutExt.OBJ TO $fileNameWithoutExt && OH51 $fileNameWithoutExt && rm $fileNameWithoutExt.OBJ,$fileNameWithoutExt.LST,$fileNameWithoutExt.M51,$fileNameWithoutExt"
+    },
+    "code-runner.languageIdToFileExtensionMap": {
+        "assembly": ".asm"
     }
 }

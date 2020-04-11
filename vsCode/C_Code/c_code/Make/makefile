@@ -11,7 +11,7 @@ OBJ = $(Path)\$(File).o
 
 $(EXE):$(OBJ) icon.o
 	@$(CC) $^ $(CFLASS) -o $@
-$(Path)\%.o:$(Path)\%.c 
+$(Path)\%.o:$(Path)\%.c
 	@$(CC) -c $^ -o $@
 clean:
 	@del $(OBJ)

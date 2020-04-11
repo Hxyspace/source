@@ -14,7 +14,12 @@
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "bool=char",
+                "false=0",
+                "true=1",
+                "SDL_TRUE=true",
+                "NULL=0"
             ],
             "compilerPath": "D:\\Program Files\\mingw\\bin\\gcc.exe",
             "cStandard": "c11",
