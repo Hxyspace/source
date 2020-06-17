@@ -16,5 +16,7 @@ int f(int n,int m)
 int main()
 {
 	printf("%d",f(10,3));
+	getchar();
+	
 	return 0;
 }
